@@ -1,4 +1,4 @@
-# 适配emqx v4.3版本
+## 适配emqx v4.3版本
 
 emqx-plugin-template
 ====================
@@ -62,16 +62,21 @@ Build the EMQX broker
 ```
   
 
-注：下载 [EMQX完整源码(增加kafka插件配置)] (https://github.com/jameycai/emqx/tree/main-v4.3) 。
+
+
+##### 注：以上配置的完整的EMQX源码 [EMQX v4.3的完整源码(增加kafka插件配置)] 下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
+
 
 
 ###### 5. 编译EMQX，并且启动EMQX
+进入emqx-v4.3目录，执行make命令，此过程会因为网络问题，多次出现错误导致停止，只需要不断地make直到成功，有条件建议科学上网。
+````
+  二进制编译命令： make
+  Docker镜像打包： make emqx-docker
 
-进入emqx目录，执行make命令，需要保持外网通畅，有条件建议科学上网。
-
-二进制编译命令：`make`
-
-docker镜像打包：`make emqx-docker`
+  编译成功后，会出现_build目录，然后进入_build/emqx/rel/emqx/bin目录，启动emqx，如下：
+  ./emqx start  
+````
 
 
 License
