@@ -26,16 +26,19 @@ Build the EMQX broker
  
   注意：openssl的版本不是1.1.1k，则需要通过源码openssl-1.1.1k.tar.gz来安装openssl
 ```
-###### 2. 准备Erlang/OTP R21及以上环境
 
+###### 2. 准备Erlang/OTP R21及以上环境
+```
   根据服务器CPU架构不同选择不同安装包，如果是X86架构，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
+  
   wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.4.5-1~centos~7_amd64.rpm
   yum install esl-erlang_23.3.4.5-1~centos~7_amd64.rpm 
   
   如果是arm架构，使用esl-erlang_23.3.4.5-1~centos~7_arm64.rpm安装，如下：
+  
   wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/aarch64/esl-erlang_23.3.4.5-1~centos~7_arm64.rpm
   yum install esl-erlang_23.3.4.5-1~centos~7_arm64.rpm 
-
+```
 
 
 ###### 3. 下载EMQX源码
