@@ -20,7 +20,7 @@ emqx:hook('client.check_acl', fun ?MODULE:on_client_check_acl/5, [Env]).
 
 Build the EMQX broker
 -----------------
-###### 1. 基于CentOS7.5环境下编译，先安装相关插件
+###### 1. 基于CentOS 7.9环境下编译，先安装相关插件
 ```
   yum -y install make gcc gcc-c++ glibc-devel glibc-headers kernel-devel kernel-headers m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel  libselinux-devel xmlto perl git wget unixODBC unixODBC-devel 
  
