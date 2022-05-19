@@ -25,6 +25,7 @@ Build the EMQX broker
   yum -y install  make gcc gcc-c++ glibc-devel glibc-headers kernel-devel kernel-headers m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel libselinux-devel xmlto perl git wget unixODBC unixODBC-devel 
  
   注意：openssl的版本不是1.1.1k，则需要通过源码openssl-1.1.1k.tar.gz来安装openssl
+  注意：需要通过源码安装libcoap，下载地址：https://github.com/obgm/libcoap/archive/refs/tags/v4.3.0.tar.gz
 ```
 
 ###### 2. 准备Erlang/OTP R21及以上环境
