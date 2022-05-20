@@ -49,6 +49,9 @@ Build the EMQX broker
   git clone -b v4.3.0 https://github.com/emqx/emqx-rel.git emqx-v4.3
 ```
 
+##### 建议直接下载完整EMQX源码包（emqx v4.3源码+kafka插件），下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
+
+
 
 ###### 4. 修改EMQX文件，增加kafka插件
 
@@ -63,10 +66,7 @@ Build the EMQX broker
 ```
   
 
-
-
-##### 注：以上配置的完整的EMQX源码 [EMQX v4.3的完整源码(增加kafka插件配置)] 下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
-
+注：以上配置，在完整EMQX源码包（emqx v4.3源码+kafka插件）中，已经包括，不需要配置。
 
 
 ###### 5. 编译EMQX，并且启动EMQX
