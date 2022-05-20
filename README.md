@@ -79,7 +79,7 @@ Build the EMQX broker
   ./emqx start  
 ````
 
-注意： 默认CoAP协议和Lwm2m协议的端口会存在冲突，需要分别设置两者的端口。
+注意： CoAP协议和Lwm2m协议的端口如果存在冲突，需要分别设置两者的端口。
 
 License
 -------
