@@ -20,7 +20,7 @@ emqx:hook('client.check_acl', fun ?MODULE:on_client_check_acl/5, [Env]).
 
 Build the EMQX broker
 -----------------
-###### 1. 基于CentOS 7.9环境下编译，先安装相关插件
+###### 1. 先安装相关依赖组件，本文基于CentOS 7.9环境，通过yum方式安装
 ```
   yum -y install make gcc gcc-c++ glibc-devel glibc-headers kernel-devel kernel-headers m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel  libselinux-devel xmlto perl git wget unixODBC unixODBC-devel 
  
@@ -49,11 +49,11 @@ Build the EMQX broker
   git clone -b v4.3.0 https://github.com/emqx/emqx-rel.git emqx-v4.3
 ```
 
-##### 建议直接下载完整EMQX源码包（emqx v4.3源码+kafka插件），下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
+##### 建议直接下载完整EMQX源码包（基于官方emqx v4.3开源源码+kafka插件），下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
 
 
 
-###### 4. 修改EMQX文件，增加kafka插件
+###### 4. 修改EMQX文件，增加kafka插件配置
 
  修改EMQX主目录下Makefile文件，添加如下行
  ```
@@ -66,11 +66,11 @@ Build the EMQX broker
 ```
   
 
-注：以上配置，在完整EMQX源码包（emqx v4.3源码+kafka插件）中，已经包括，不需要配置。
+注：以上配置，在完整EMQX源码包（基于官方emqx v4.3开源源码+kafka插件）中，已经包括相关配置，不需要配置。
 
 
-###### 5. 编译EMQX，并且启动EMQX
-进入emqx-v4.3目录，执行make命令，此过程会因为网络问题，多次出现错误导致停止，只需要不断地make直到成功，有条件建议科学上网。
+###### 5. 编译EMQX源码，并且启动EMQX
+进入emqx-v4.3源码目录，执行make命令，此过程会因为网络问题，多次出现错误导致停止，只需要不断地make直到成功，有条件建议科学上网。
 ````
   二进制编译命令： make
   Docker镜像打包： make emqx-docker
@@ -83,7 +83,8 @@ Build the EMQX broker
 
 
 
-###### EMQX启动成功，界面如下图：
+###### 6. 启动EMQX成功，通过浏览器访问地址（ http://ip:18083 ），访问控制台：
+
 ![image](https://user-images.githubusercontent.com/13848153/169473622-00443f97-b3ef-47cf-92eb-ef9cc06e9305.png)
 
 ![image](https://user-images.githubusercontent.com/13848153/169473900-c897e274-316d-4734-bc41-c1ddd15f83e5.png)
