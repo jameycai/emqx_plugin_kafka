@@ -46,7 +46,7 @@ Build the EMQX broker
 
  官方源码仓库地址，执行此命令
 ```
-  git clone -b v4.3.0 https://github.com/emqx/emqx-rel.git emqx-v4.3
+  git clone -b v4.3.12 https://github.com/emqx/emqx.git emqx-v4.3
 ```
 
 ##### 建议直接下载完整EMQX源码包（基于官方emqx v4.3开源源码+kafka插件），下载地址(https://github.com/jameycai/emqx/tree/main-v4.3) 。
