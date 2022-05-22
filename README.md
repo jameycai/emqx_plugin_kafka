@@ -29,9 +29,7 @@ Build the EMQX broker
 ```
 
 ###### 2. 准备Erlang/OTP R21及以上环境 (推荐使用erlang23.3版本)
-```
-  ## Erlang的下载地址：https://www.erlang.org/patches/otp-23.3.4.10
-  
+```  
   ## 请根据服务器CPU架构不同选择不同rpm安装包。如果服务器是X86架构，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
   wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.4.5-1~centos~7_amd64.rpm
   yum install esl-erlang_23.3.4.5-1~centos~7_amd64.rpm 
