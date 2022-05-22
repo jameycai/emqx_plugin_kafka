@@ -30,13 +30,13 @@ Build the EMQX broker
 
 ###### 2. 准备Erlang/OTP R21及以上环境 (推荐使用erlang23.3版本)
 ```
-  根据服务器CPU架构不同选择不同安装包，如果是X86架构，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
+  ## Erlang的下载地址：https://www.erlang.org/patches/otp-23.3.4.10
   
+  ## 请根据服务器CPU架构不同选择不同rpm安装包。如果服务器是X86架构，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
   wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.4.5-1~centos~7_amd64.rpm
   yum install esl-erlang_23.3.4.5-1~centos~7_amd64.rpm 
   
-  如果是arm架构，使用esl-erlang_23.3.4.5-1~centos~7_arm64.rpm安装，如下：
-  
+  ## 如果服务器是arm架构，使用esl-erlang_23.3.4.5-1~centos~7_arm64.rpm安装，如下：
   wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/aarch64/esl-erlang_23.3.4.5-1~centos~7_arm64.rpm
   yum install esl-erlang_23.3.4.5-1~centos~7_arm64.rpm 
 ```
@@ -91,6 +91,8 @@ Build the EMQX broker
 
 ![image](https://user-images.githubusercontent.com/13848153/169473987-a6a97bc7-08ed-4943-a110-9bd23cdf390b.png)
 
+测试MQTT转Kafka接收到消息
+![image](https://user-images.githubusercontent.com/13848153/169672811-98ec0240-b5d5-4fdc-a4fe-a9082aeb6d15.png)
 
 
 License
