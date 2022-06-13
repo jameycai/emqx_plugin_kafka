@@ -24,19 +24,23 @@ Build the EMQX broker
 ```
   yum -y install make gcc gcc-c++ glibc-devel glibc-headers kernel-devel kernel-headers m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel  libselinux-devel xmlto perl git wget unixODBC unixODBC-devel 
  
-  注意：openssl的版本低于1.1.1k，则需要通过源码openssl-1.1.1k.tar.gz来安装openssl
+  注意：openssl的版本低于1.1.1o，则需要通过源码openssl-1.1.1o.tar.gz来安装openssl
   注意：如果测试CoAP功能，需要安装libcoap，具体地址 https://libcoap.net/install.html
 ```
 
-###### 2. 准备Erlang/OTP R21及以上环境 (推荐使用erlang23.3版本)
+###### 2. 准备Erlang/OTP R23环境 (推荐使用erlang23.3.4版本)
 ```  
-  ## 请根据服务器CPU架构不同选择不同rpm安装包。如果服务器是X86架构，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
-  wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.4.5-1~centos~7_amd64.rpm
-  yum install esl-erlang_23.3.4.5-1~centos~7_amd64.rpm 
+    ## 请根据编译服务器的CPU架构和操作系统，选择对应的Erlang/OTP的rpm安装包进行安装。
+     
+    (a). 如果服务器是X86_64架构，并且操作系统是CentOS 7.x系统，使用esl-erlang_23.3.4.5-1~centos~7_amd64.rpm安装，如下；
+    wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.4.5-1~centos~7_amd64.rpm
+    yum install esl-erlang_23.3.4.5-1~centos~7_amd64.rpm 
   
-  ## 如果服务器是arm架构，使用esl-erlang_23.3.4.5-1~centos~7_arm64.rpm安装，如下：
-  wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/aarch64/esl-erlang_23.3.4.5-1~centos~7_arm64.rpm
-  yum install esl-erlang_23.3.4.5-1~centos~7_arm64.rpm 
+    (b). 如果服务器是arm架构，并且操作系统是CentOS 7.x系统，使用esl-erlang_23.3.4.5-1~centos~7_arm64.rpm安装，如下：
+    wget http://packages.erlang-solutions.com/erlang/rpm/centos/7/aarch64/esl-erlang_23.3.4.5-1~centos~7_arm64.rpm
+    yum install esl-erlang_23.3.4.5-1~centos~7_arm64.rpm 
+    
+    注意：如果不支持以上方式的安装，也可以通过Erlang源码方式安装，Erlang的源码下载地址：https://www.erlang.org/patches/otp-23.3.4.10
 ```
 
 
