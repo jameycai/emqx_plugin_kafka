@@ -22,9 +22,9 @@ Build the EMQX broker
 -----------------
 ###### 1. 先安装相关依赖组件，本文基于CentOS 7.9环境，通过yum方式安装
 ```
-  yum -y install make gcc gcc-c++ glibc-devel glibc-headers kernel-devel kernel-headers m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel  libselinux-devel xmlto perl git wget unixODBC unixODBC-devel 
+  yum -y install gcc gcc-c++ cpp glibc glibc-devel glibc-headers kernel-devel kernel-headers  make m4 ncurses ncurses-devel openssl openssl-devel openssl-libs zlib zlib-devel  libselinux-devel xmlto perl git wget zip unzip gtk2-devel binutils-devel unixODBC unixODBC-devel 
  
-  注意：openssl的版本低于1.1.1o，则需要通过源码openssl-1.1.1o.tar.gz来安装openssl
+  注意：openssl的版本低于1.1.1k，则需要通过源码openssl-1.1.1k.tar.gz来安装openssl
   注意：如果测试CoAP功能，需要安装libcoap，具体地址 https://libcoap.net/install.html
 ```
 
@@ -41,6 +41,7 @@ Build the EMQX broker
     yum install esl-erlang_23.3.4.5-1~centos~7_arm64.rpm 
     
     注意：如果不支持以上方式的安装，也可以通过Erlang源码方式安装，Erlang的源码下载地址：https://www.erlang.org/patches/otp-23.3.4.10
+    注意：检查一下rebar3是否安装 rebar3 -v ，如果没有安装，需要安装。
 ```
 
 

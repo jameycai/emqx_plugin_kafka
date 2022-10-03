@@ -8,7 +8,7 @@
   {env, []},
   {licenses, ["Apache-2.0"]},
   {maintainers, ["lyg <3613840847@qq.com>", "ultrakid <ultrakid@qq.com>"]},
-  {links,[{"Github","https://github.com/yzs/emqx-plugin-kafka"}, {"Github","https://github.com/ULTRAKID/emqx_plugin_kafka"}]}
+  {links,[{"Github","https://github.com/yzs/emqx-plugin-kafka"}, {"Github","https://github.com/jameycai/emqx_plugin_kafka"}]}
  ]
 }.
 
